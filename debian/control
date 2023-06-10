@@ -1,19 +1,64 @@
-Source: upstream-name
-Section: admin
+Source: hyprland
+Section: main
 Priority: optional
-Maintainer: name <email>
+Maintainer: ferrreo <harderthanfire@gmail.com>
 Standards-Version: 4.6.1
-Build-Depends: debhelper-compat (= 13)
+Build-Depends: 
+              debhelper-compat (= 13)
+              meson
+              build-essential
+              ninja-build
+              cmake-extras
+              cmake
+              gettext
+              gettext-base
+              fontconfig
+              libfontconfig-dev
+              libffi-dev
+              libxml2-dev
+              libdrm-dev
+              libxkbcommon-x11-dev
+              libxkbregistry-dev
+              libxkbcommon-dev
+              libpixman-1-dev
+              libudev-dev              
+              libseat-dev
+              libxcb-dri3-dev
+              libvulkan-dev
+              libvulkan-volk-dev
+              vulkan-validationlayers-dev
+              libvkfft-dev
+              libgulkan-dev
+              libegl-dev
+              libgles2
+              libegl1-mesa-dev
+              glslang-tools
+              libinput-bin
+              libinput-dev
+              libxcb-composite0-dev
+              libavutil-dev
+              libavcodec-dev
+              libavformat-dev
+              libxcb-ewmh2
+              libxcb-ewmh-dev
+              libxcb-present-dev
+              libxcb-icccm4-dev
+              libxcb-render-util0-dev
+              libxcb-res0-dev
+              libxcb-xinput-dev
+              xdg-desktop-portal-wlr
+              hwdata-dev
+              libdisplay-info-dev
+              wayland-protocols
+              libwayland-dev
+              libliftoff-dev
+Depends:
+        fontconfig
+        seatd
 Rules-Requires-Root: no
 
-Package: pkgname1
+Package: hyprland
 Architecture: linux-any
-# Delete any of these lines if un-used
-Depends: ${misc:Depends}, depends
-Recommends: high priority optdepends
-Conflicts: conflicts
-Suggests: low priority optdepends
-Breaks: also conflicts!?
-Provides: provides
-#
-Description: pkgdesc
+Depends: ${misc:Depends}
+Provides: Hyprland, hyprctl
+Description: Hyprland window manager
