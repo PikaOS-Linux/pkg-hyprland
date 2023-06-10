@@ -12,8 +12,7 @@ add-apt-repository ppa:kubuntu-ppa/backports
 
 wget -nv https://github.com/hyprwm/Hyprland/releases/download/v0.26.0/source-v0.26.0.tar.gz
 tar -xf ./source-v0.26.0.tar.gz
-cp -rvf ./debian ./source-v0.26.0/hyprland-source
-cd ./source-v0.26.0
+cp -rvf ./debian ./hyprland-source
 cd ./hyprland-source
 
 sed -i 's/\/usr\/local/\/usr/g' config.mk
