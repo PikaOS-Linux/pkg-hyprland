@@ -46,6 +46,7 @@ Build-Depends:
               libxcb-render-util0-dev,
               libxcb-res0-dev,
               libxcb-xinput-dev,
+              libgbm-dev,
               xdg-desktop-portal-wlr,
               hwdata-dev,
               libdisplay-info-dev,
