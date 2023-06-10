@@ -53,6 +53,8 @@ Build-Depends:
               libwayland-dev,
               libliftoff-dev,
               xwayland,
+              libpango1.0-dev,
+              libpangocairo-1.0-0,
 Rules-Requires-Root: no
 
 Package: hyprland
