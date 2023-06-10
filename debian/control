@@ -31,6 +31,7 @@ Build-Depends:
               libgulkan-dev,
               libegl-dev,
               libgles2,
+              seatd,
               libegl1-mesa-dev,
               glslang-tools,
               libinput-bin,
@@ -62,6 +63,12 @@ Rules-Requires-Root: no
 
 Package: hyprland
 Architecture: linux-any
-Depends: fontconfig, seatd
-Provides: Hyprland, hyprctl
+
+Depends: fontconfig,
+         ${shlibs:Depends},
+         ${misc:Depends},
+         seatd,
+         libdisplay-info0,
+         libliftoff0,
+         Provides: Hyprland, hyprctl
 Description: Hyprland window manager
