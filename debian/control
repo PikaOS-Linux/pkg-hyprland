@@ -53,13 +53,10 @@ Build-Depends:
               libwayland-dev,
               libliftoff-dev,
               xwayland,
-Depends:
-        fontconfig
-        seatd
 Rules-Requires-Root: no
 
 Package: hyprland
 Architecture: linux-any
-Depends: ${misc:Depends}
+Depends: fontconfig, seatd
 Provides: Hyprland, hyprctl
 Description: Hyprland window manager
