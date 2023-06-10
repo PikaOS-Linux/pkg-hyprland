@@ -1,7 +1,4 @@
 #!/usr/bin/make -f
 
-override_dh_auto_configure:
-  -Dsystemd=enabled  dh_auto_configure -- -Dauto_features=disabled -Dxwayland=enabled -Dlegacy_renderer=disabled -Dsystemd=enabled
-
 %:
 	dh $@ --buildsystem=meson
