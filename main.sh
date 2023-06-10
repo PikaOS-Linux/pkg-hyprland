@@ -10,14 +10,8 @@ add-apt-repository ppa:kubuntu-ppa/backports
 #apt install pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
 # Clone Upstream
 
-wget https://github.com/hyprwm/Hyprland/releases/download/v0.26.0/source-v0.26.0.tar.gz
-mkdir -p ./src-pkg-name
-cp -rvf ./debian ./src-pkg-name/
-cd ./src-pkg-name/
-
 wget -nv https://github.com/hyprwm/Hyprland/releases/download/v0.26.0/source-v0.26.0.tar.gz
 tar -xf ./source-v0.26.0
-mkdir -p ./source-v0.26.0
 cp -rvf ./debian ./source-v0.26.0/
 cd ./source-v0.26.0/
 
