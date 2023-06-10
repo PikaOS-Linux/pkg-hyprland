@@ -63,12 +63,11 @@ Rules-Requires-Root: no
 
 Package: hyprland
 Architecture: linux-any
-
 Depends: fontconfig,
          ${shlibs:Depends},
          ${misc:Depends},
          seatd,
          libdisplay-info0,
          libliftoff0,
-         Provides: Hyprland, hyprctl
+Provides: Hyprland, hyprctl
 Description: Hyprland window manager
