@@ -15,7 +15,7 @@ tar -xf ./source-v0.26.0.tar.gz
 cp -rvf ./debian ./hyprland-source
 cd ./hyprland-source
 
-sed -i 's/\/usr\/local/\/usr/g' config.mk
+#sed -i 's/\/usr\/local/\/usr/g' config.mk
 
 # Get build deps
 ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
