@@ -3,10 +3,10 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-wget -nv https://github.com/hyprwm/Hyprland/releases/download/v0.26.0/source-v0.26.0.tar.gz
-tar -xf ./source-v0.26.0.tar.gz
-cp -rvf ./debian ./hyprland-source
-cd ./hyprland-source
+git clone https://github.com/hyprwm/Hyprland.git
+cd Hyprland
+git submodle update --init
+cp -rvf ./debian ./
 
 #sed -i 's/\/usr\/local/\/usr/g' config.mk
 sed -E -i -e 's/(soversion = 12)([^032]|$$)/soversion = 12032/g' subprojects/wlroots/meson.build
