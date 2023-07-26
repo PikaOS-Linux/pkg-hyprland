@@ -5,7 +5,7 @@ DEBIAN_FRONTEND=noninteractive
 # Clone Upstream
 git clone https://github.com/hyprwm/Hyprland.git
 cd Hyprland
-git submodle update --init
+git submodule update --init
 cp -rvf ./debian ./
 
 #sed -i 's/\/usr\/local/\/usr/g' config.mk
