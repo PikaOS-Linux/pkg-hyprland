@@ -12,6 +12,7 @@ cp -rvf ../debian ./
 sed -E -i -e 's/(soversion = 12)([^032]|$$)/soversion = 12032/g' subprojects/wlroots/meson.build
 
 # Get build deps
+apt-get update
 apt-get build-dep ./ -y
 
 # Build package
