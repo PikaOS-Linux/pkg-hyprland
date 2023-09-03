@@ -3,8 +3,8 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-wget -nv https://github.com/hyprwm/Hyprland/releases/download/v0.28.0/source-v0.28.0.tar.gz
-tar -xf ./source-v0.28.0.tar.gz
+wget -nv https://github.com/hyprwm/Hyprland/releases/download/v0.29.1/source-v0.29.1.tar.gz
+tar -xf ./source-v0.29.1.tar.gz
 cp -rvf ./debian ./hyprland-source
 cd ./hyprland-source
 
