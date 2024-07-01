@@ -8,9 +8,9 @@ apt-get install libglib2.0-0=2.78.0-2 libglib2.0-bin=2.78.0-2 libglib2.0-dev-bin
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-git clone ./hyprland https://github.com/hyprwm/Hyprland -b v0.41.2 --depth=1
-cp -rvf ./debian ./hyprland-source/debian
-cd ./hyprland-source
+git clone -b v0.41.2 --depth=1 https://github.com/hyprwm/Hyprland ./hyprland
+cp -rvf ./debian ./hyprland/debian
+cd ./hyprland
 
 #sed -i 's/\/usr\/local/\/usr/g' config.mk
 #sed -E -i -e 's/(soversion = 12)([^032]|$$)/soversion = 12032/g' subprojects/wlroots/meson.build
