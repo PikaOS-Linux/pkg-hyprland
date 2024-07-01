@@ -25,7 +25,6 @@ Build-Depends:
               libseat-dev,
               libxcb-dri3-dev,
               libvulkan-dev,
-              vulkan-headers,
               libvulkan-volk-dev,
               vulkan-validationlayers-dev,
               libvkfft-dev,
