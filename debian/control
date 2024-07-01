@@ -63,6 +63,7 @@ Build-Depends:
               libhyprlang-dev,
               libhyprutils-dev,
               libxcb-util-dev,
+              libtomlplusplus-dev,
               jq,
 Rules-Requires-Root: no
 
