@@ -2,6 +2,9 @@
 
 set -e
 
+# Dead Pika Release Quirk??
+apt-get install libglib2.0-0=2.78.0-2 libglib2.0-bin=2.78.0-2 libglib2.0-dev-bin=2.78.0-2 -y
+
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
