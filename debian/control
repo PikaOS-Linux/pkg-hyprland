@@ -58,6 +58,7 @@ Build-Depends:
               libpango1.0-dev,
               libpangocairo-1.0-0,
               libsystemd-dev,
+              hyprwayland-scanner-dev,
               jq,
 Rules-Requires-Root: no
 
@@ -68,6 +69,9 @@ Depends: fontconfig,
          ${misc:Depends},
          seatd,
          libdisplay-info0,
+         hyprwayland-scanner,
+         hyprcursor,
+         hyprlang,
          libliftoff0,
 Provides: Hyprland, hyprctl
 Description: Hyprland window manager
