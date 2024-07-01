@@ -61,6 +61,7 @@ Build-Depends:
               libhyprwayland-scanner-dev,
               libhyprcursor-dev,
               libhyprlang-dev,
+              libhyprutils-dev,
               libxcb-util-dev,
               jq,
 Rules-Requires-Root: no
