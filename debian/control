@@ -60,6 +60,7 @@ Build-Depends:
               libsystemd-dev,
               libhyprwayland-scanner-dev,
               libhyprcursor-dev,
+              libhyprlang-dev,
               jq,
 Rules-Requires-Root: no
 
