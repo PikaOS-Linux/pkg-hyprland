@@ -1,13 +1,12 @@
 #! /bin/bash
 
+set -e
+
 DEBIAN_FRONTEND=noninteractive
 
-# Dead Pika Release Quirk??
-apt-get install libglib2.0-0=2.78.0-2 libglib2.0-bin=2.78.0-2 libglib2.0-dev-bin=2.78.0-2 -y
-
 # Clone Upstream
-wget -nv https://github.com/hyprwm/Hyprland/releases/download/v.0/source-v.0.tar.gz
-tar -xf ./source-v.0.tar.gz
+wget -nv https://github.com/hyprwm/Hyprland/releases/download/v.0/source-v0.41.0.tar.gz
+tar -xf ./source-v0.41.0.tar.gz
 cp -rvf ./debian ./hyprland-source/debian
 cd ./hyprland-source
 
