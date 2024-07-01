@@ -2,8 +2,10 @@
 
 set -e
 
-# Dead Pika Release Quirk??
-apt-get install libglib2.0-0=2.78.0-2 libglib2.0-bin=2.78.0-2 libglib2.0-dev-bin=2.78.0-2 -y --allow-downgrades
+# Dead PikaOS3 Release Quirk??
+wget http://ftp.us.debian.org/debian/pool/main/x/xcb-util-errors/libxcb-errors0_1.0.1-2_amd64.deb
+wget http://ftp.us.debian.org/debian/pool/main/x/xcb-util-errors/libxcb-errors-dev_1.0.1-2_amd64.deb
+apt-get install libglib2.0-0=2.78.0-2 libglib2.0-bin=2.78.0-2 libglib2.0-dev-bin=2.78.0-2 ./*libxcb-errors* -y --allow-downgrades
 
 DEBIAN_FRONTEND=noninteractive
 
