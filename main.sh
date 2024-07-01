@@ -8,8 +8,7 @@ apt-get install libglib2.0-0=2.78.0-2 libglib2.0-bin=2.78.0-2 libglib2.0-dev-bin
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-wget -nv https://github.com/hyprwm/Hyprland/releases/download/v0.41.0/source-v0.41.0.tar.gz
-tar -xf ./source-v0.41.0.tar.gz
+git clone ./hyprland https://github.com/hyprwm/Hyprland -b v0.41.2 --depth=1
 cp -rvf ./debian ./hyprland-source/debian
 cd ./hyprland-source
 
