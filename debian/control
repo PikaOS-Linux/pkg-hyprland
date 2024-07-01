@@ -58,7 +58,8 @@ Build-Depends:
               libpango1.0-dev,
               libpangocairo-1.0-0,
               libsystemd-dev,
-              hyprwayland-scanner-dev,
+              libhyprwayland-scanner-dev,
+              libhyprcursor-dev,
               jq,
 Rules-Requires-Root: no
 
@@ -69,8 +70,8 @@ Depends: fontconfig,
          ${misc:Depends},
          seatd,
          libdisplay-info0,
-         hyprwayland-scanner,
-         hyprcursor,
+         libhyprwayland-scanner,
+         libhyprcursor,
          hyprlang,
          libliftoff0,
 Provides: Hyprland, hyprctl
